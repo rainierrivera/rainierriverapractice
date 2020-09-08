@@ -181,8 +181,9 @@ class DeliveryListViewModel: DeliveryListViewModelType {
       let viewModel = BasicDeliveryCellViewModel(delivery: delivery)
       itemModels.append(.basic(viewModel: viewModel))
     }
-
-      delegate?.deliveryListViewModel(self, didUpdateItemModel: itemModels)
+    
+    self.deliveries = _deliveries
+    delegate?.deliveryListViewModel(self, didUpdateItemModel: itemModels)
   }
   
   private func getFavouriteDelivery() {
