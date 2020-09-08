@@ -1,0 +1,725 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD8714B93D0C646D2C24FF90 /* Pods_LalafoodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7816704B25AF4262D074C5A /* Pods_LalafoodTests.framework */; };
+		C12837EE25071AD700531E65 /* DeliveryInformationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12837ED25071AD700531E65 /* DeliveryInformationCellViewModel.swift */; };
+		C12837F025071AF000531E65 /* DeliveryImageCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12837EF25071AF000531E65 /* DeliveryImageCellViewModel.swift */; };
+		C12837F225071B4100531E65 /* DeliveryFeeCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12837F125071B4100531E65 /* DeliveryFeeCellViewModel.swift */; };
+		C12837F425072D0300531E65 /* RefreshControl+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12837F325072D0300531E65 /* RefreshControl+.swift */; };
+		C1A6371E2506251A0088B91F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6371D2506251A0088B91F /* AppDelegate.swift */; };
+		C1A637222506251A0088B91F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A637212506251A0088B91F /* ViewController.swift */; };
+		C1A637272506251E0088B91F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1A637262506251E0088B91F /* Assets.xcassets */; };
+		C1A6372A2506251E0088B91F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A637282506251E0088B91F /* LaunchScreen.storyboard */; };
+		C1A637352506251F0088B91F /* LalafoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A637342506251F0088B91F /* LalafoodTests.swift */; };
+		C1A6374125062D8C0088B91F /* Sender.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6374025062D8C0088B91F /* Sender.swift */; };
+		C1A6374325062D960088B91F /* Delivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6374225062D960088B91F /* Delivery.swift */; };
+		C1A6374625062DF50088B91F /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6374525062DF50088B91F /* WebService.swift */; };
+		C1A6374825062E6D0088B91F /* WebServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6374725062E6D0088B91F /* WebServiceError.swift */; };
+		C1A6374A2506537F0088B91F /* DeliveryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A637492506537F0088B91F /* DeliveryAPI.swift */; };
+		C1A6374C250655620088B91F /* DeliveryWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6374B250655620088B91F /* DeliveryWebService.swift */; };
+		C1A6374E250656300088B91F /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6374D250656300088B91F /* Route.swift */; };
+		C1A637502506651C0088B91F /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6374F2506651C0088B91F /* RealmService.swift */; };
+		C1A6375225066E1B0088B91F /* DeliveryPersistentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6375125066E1B0088B91F /* DeliveryPersistentService.swift */; };
+		C1A6375525068B920088B91F /* BasicDeliveryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6375425068B920088B91F /* BasicDeliveryTableViewCell.swift */; };
+		C1A63758250690B20088B91F /* DeliveryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A63757250690B20088B91F /* DeliveryListViewModel.swift */; };
+		C1A6375A250690D60088B91F /* DeliverySectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A63759250690D60088B91F /* DeliverySectionModel.swift */; };
+		C1A6375D2506ED630088B91F /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6375C2506ED630088B91F /* Double+.swift */; };
+		C1A637602506EE060088B91F /* DeliveryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6375F2506EE060088B91F /* DeliveryDetailsViewController.swift */; };
+		C1A637632506F0FF0088B91F /* DeliveryInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A637622506F0FF0088B91F /* DeliveryInformationTableViewCell.swift */; };
+		C1A637652506F11B0088B91F /* DeliveryImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A637642506F11B0088B91F /* DeliveryImageTableViewCell.swift */; };
+		C1A637672506F1350088B91F /* DeliveryFeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A637662506F1350088B91F /* DeliveryFeeTableViewCell.swift */; };
+		C1A637692506F1560088B91F /* DeliveryDetailSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A637682506F1560088B91F /* DeliveryDetailSectionModel.swift */; };
+		C1A6376B2506F44C0088B91F /* DeliveryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6376A2506F44C0088B91F /* DeliveryDetailsViewModel.swift */; };
+		C1A6376D25070C190088B91F /* FavouriteDelivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6376C25070C180088B91F /* FavouriteDelivery.swift */; };
+		EAF83548035B87136F11453F /* Pods_Lalafood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAEA318C564E6FA8D8FA8EF0 /* Pods_Lalafood.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1A637312506251F0088B91F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1A637122506251A0088B91F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1A637192506251A0088B91F;
+			remoteInfo = Lalafood;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15F9F5BD30D4534B0A3BDBB3 /* Pods-LalafoodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LalafoodTests.debug.xcconfig"; path = "Target Support Files/Pods-LalafoodTests/Pods-LalafoodTests.debug.xcconfig"; sourceTree = "<group>"; };
+		638A119D09E633BFED7B04F3 /* Pods-Lalafood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lalafood.release.xcconfig"; path = "Target Support Files/Pods-Lalafood/Pods-Lalafood.release.xcconfig"; sourceTree = "<group>"; };
+		74BCC4E50976F0348B0E1167 /* Pods-Lalafood-LalafoodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lalafood-LalafoodTests.release.xcconfig"; path = "Target Support Files/Pods-Lalafood-LalafoodTests/Pods-Lalafood-LalafoodTests.release.xcconfig"; sourceTree = "<group>"; };
+		A53408F3FEDAED17A6728F12 /* Pods-Lalafood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lalafood.debug.xcconfig"; path = "Target Support Files/Pods-Lalafood/Pods-Lalafood.debug.xcconfig"; sourceTree = "<group>"; };
+		BC04A644068D5B3728651A65 /* Pods-Lalafood-LalafoodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lalafood-LalafoodTests.debug.xcconfig"; path = "Target Support Files/Pods-Lalafood-LalafoodTests/Pods-Lalafood-LalafoodTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C12837ED25071AD700531E65 /* DeliveryInformationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryInformationCellViewModel.swift; sourceTree = "<group>"; };
+		C12837EF25071AF000531E65 /* DeliveryImageCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryImageCellViewModel.swift; sourceTree = "<group>"; };
+		C12837F125071B4100531E65 /* DeliveryFeeCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryFeeCellViewModel.swift; sourceTree = "<group>"; };
+		C12837F325072D0300531E65 /* RefreshControl+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RefreshControl+.swift"; sourceTree = "<group>"; };
+		C1A6371A2506251A0088B91F /* Lalafood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lalafood.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1A6371D2506251A0088B91F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C1A637212506251A0088B91F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C1A637262506251E0088B91F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1A637292506251E0088B91F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1A6372B2506251E0088B91F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1A637302506251F0088B91F /* LalafoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LalafoodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1A637342506251F0088B91F /* LalafoodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LalafoodTests.swift; sourceTree = "<group>"; };
+		C1A637362506251F0088B91F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1A6374025062D8C0088B91F /* Sender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sender.swift; sourceTree = "<group>"; };
+		C1A6374225062D960088B91F /* Delivery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delivery.swift; sourceTree = "<group>"; };
+		C1A6374525062DF50088B91F /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		C1A6374725062E6D0088B91F /* WebServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceError.swift; sourceTree = "<group>"; };
+		C1A637492506537F0088B91F /* DeliveryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryAPI.swift; sourceTree = "<group>"; };
+		C1A6374B250655620088B91F /* DeliveryWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryWebService.swift; sourceTree = "<group>"; };
+		C1A6374D250656300088B91F /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		C1A6374F2506651C0088B91F /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		C1A6375125066E1B0088B91F /* DeliveryPersistentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryPersistentService.swift; sourceTree = "<group>"; };
+		C1A6375425068B920088B91F /* BasicDeliveryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicDeliveryTableViewCell.swift; sourceTree = "<group>"; };
+		C1A63757250690B20088B91F /* DeliveryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryListViewModel.swift; sourceTree = "<group>"; };
+		C1A63759250690D60088B91F /* DeliverySectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliverySectionModel.swift; sourceTree = "<group>"; };
+		C1A6375C2506ED630088B91F /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
+		C1A6375F2506EE060088B91F /* DeliveryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailsViewController.swift; sourceTree = "<group>"; };
+		C1A637622506F0FF0088B91F /* DeliveryInformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryInformationTableViewCell.swift; sourceTree = "<group>"; };
+		C1A637642506F11B0088B91F /* DeliveryImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryImageTableViewCell.swift; sourceTree = "<group>"; };
+		C1A637662506F1350088B91F /* DeliveryFeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryFeeTableViewCell.swift; sourceTree = "<group>"; };
+		C1A637682506F1560088B91F /* DeliveryDetailSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailSectionModel.swift; sourceTree = "<group>"; };
+		C1A6376A2506F44C0088B91F /* DeliveryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailsViewModel.swift; sourceTree = "<group>"; };
+		C1A6376C25070C180088B91F /* FavouriteDelivery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteDelivery.swift; sourceTree = "<group>"; };
+		CAEA318C564E6FA8D8FA8EF0 /* Pods_Lalafood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lalafood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7816704B25AF4262D074C5A /* Pods_LalafoodTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LalafoodTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E87F7B3C9A8E2EE5BC5CFEA5 /* Pods-LalafoodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LalafoodTests.release.xcconfig"; path = "Target Support Files/Pods-LalafoodTests/Pods-LalafoodTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1A637172506251A0088B91F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAF83548035B87136F11453F /* Pods_Lalafood.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1A6372D2506251F0088B91F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD8714B93D0C646D2C24FF90 /* Pods_LalafoodTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1404674D8CED484F997FAE80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A53408F3FEDAED17A6728F12 /* Pods-Lalafood.debug.xcconfig */,
+				638A119D09E633BFED7B04F3 /* Pods-Lalafood.release.xcconfig */,
+				15F9F5BD30D4534B0A3BDBB3 /* Pods-LalafoodTests.debug.xcconfig */,
+				E87F7B3C9A8E2EE5BC5CFEA5 /* Pods-LalafoodTests.release.xcconfig */,
+				BC04A644068D5B3728651A65 /* Pods-Lalafood-LalafoodTests.debug.xcconfig */,
+				74BCC4E50976F0348B0E1167 /* Pods-Lalafood-LalafoodTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		929C7D58361F11EF291354D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAEA318C564E6FA8D8FA8EF0 /* Pods_Lalafood.framework */,
+				E7816704B25AF4262D074C5A /* Pods_LalafoodTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C12837EC25071ABE00531E65 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C12837ED25071AD700531E65 /* DeliveryInformationCellViewModel.swift */,
+				C12837EF25071AF000531E65 /* DeliveryImageCellViewModel.swift */,
+				C12837F125071B4100531E65 /* DeliveryFeeCellViewModel.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		C1A637112506251A0088B91F = {
+			isa = PBXGroup;
+			children = (
+				C1A6371C2506251A0088B91F /* Lalafood */,
+				C1A637332506251F0088B91F /* LalafoodTests */,
+				C1A6371B2506251A0088B91F /* Products */,
+				1404674D8CED484F997FAE80 /* Pods */,
+				929C7D58361F11EF291354D7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C1A6371B2506251A0088B91F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1A6371A2506251A0088B91F /* Lalafood.app */,
+				C1A637302506251F0088B91F /* LalafoodTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1A6371C2506251A0088B91F /* Lalafood */ = {
+			isa = PBXGroup;
+			children = (
+				C1A6375E2506EDE90088B91F /* Controllers */,
+				C1A6375B2506ED560088B91F /* Extensions */,
+				C1A63756250690A50088B91F /* ViewModel */,
+				C1A6375325068B6F0088B91F /* Views */,
+				C1A6374425062DA20088B91F /* Services */,
+				C1A6373F25062D760088B91F /* Models */,
+				C1A6371D2506251A0088B91F /* AppDelegate.swift */,
+				C1A637262506251E0088B91F /* Assets.xcassets */,
+				C1A637282506251E0088B91F /* LaunchScreen.storyboard */,
+				C1A6372B2506251E0088B91F /* Info.plist */,
+			);
+			path = Lalafood;
+			sourceTree = "<group>";
+		};
+		C1A637332506251F0088B91F /* LalafoodTests */ = {
+			isa = PBXGroup;
+			children = (
+				C1A637342506251F0088B91F /* LalafoodTests.swift */,
+				C1A637362506251F0088B91F /* Info.plist */,
+			);
+			path = LalafoodTests;
+			sourceTree = "<group>";
+		};
+		C1A6373F25062D760088B91F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C1A6374025062D8C0088B91F /* Sender.swift */,
+				C1A6374225062D960088B91F /* Delivery.swift */,
+				C1A6374D250656300088B91F /* Route.swift */,
+				C1A63759250690D60088B91F /* DeliverySectionModel.swift */,
+				C1A637682506F1560088B91F /* DeliveryDetailSectionModel.swift */,
+				C1A6376C25070C180088B91F /* FavouriteDelivery.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C1A6374425062DA20088B91F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C1A6374525062DF50088B91F /* WebService.swift */,
+				C1A6374725062E6D0088B91F /* WebServiceError.swift */,
+				C1A637492506537F0088B91F /* DeliveryAPI.swift */,
+				C1A6374B250655620088B91F /* DeliveryWebService.swift */,
+				C1A6374F2506651C0088B91F /* RealmService.swift */,
+				C1A6375125066E1B0088B91F /* DeliveryPersistentService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C1A6375325068B6F0088B91F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C1A637612506F0D70088B91F /* TableViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C1A63756250690A50088B91F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C12837EC25071ABE00531E65 /* TableViewCell */,
+				C1A63757250690B20088B91F /* DeliveryListViewModel.swift */,
+				C1A6376A2506F44C0088B91F /* DeliveryDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C1A6375B2506ED560088B91F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C1A6375C2506ED630088B91F /* Double+.swift */,
+				C12837F325072D0300531E65 /* RefreshControl+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C1A6375E2506EDE90088B91F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C1A6375F2506EE060088B91F /* DeliveryDetailsViewController.swift */,
+				C1A637212506251A0088B91F /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C1A637612506F0D70088B91F /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C1A6375425068B920088B91F /* BasicDeliveryTableViewCell.swift */,
+				C1A637622506F0FF0088B91F /* DeliveryInformationTableViewCell.swift */,
+				C1A637642506F11B0088B91F /* DeliveryImageTableViewCell.swift */,
+				C1A637662506F1350088B91F /* DeliveryFeeTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1A637192506251A0088B91F /* Lalafood */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1A637392506251F0088B91F /* Build configuration list for PBXNativeTarget "Lalafood" */;
+			buildPhases = (
+				0339DB48FFC12DC1ED76913B /* [CP] Check Pods Manifest.lock */,
+				C1A637162506251A0088B91F /* Sources */,
+				C1A637172506251A0088B91F /* Frameworks */,
+				C1A637182506251A0088B91F /* Resources */,
+				4DE33FC3F888D27F3CA7FF7A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lalafood;
+			productName = Lalafood;
+			productReference = C1A6371A2506251A0088B91F /* Lalafood.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C1A6372F2506251F0088B91F /* LalafoodTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1A6373C2506251F0088B91F /* Build configuration list for PBXNativeTarget "LalafoodTests" */;
+			buildPhases = (
+				71866F666858900179D9D643 /* [CP] Check Pods Manifest.lock */,
+				C1A6372C2506251F0088B91F /* Sources */,
+				C1A6372D2506251F0088B91F /* Frameworks */,
+				C1A6372E2506251F0088B91F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1A637322506251F0088B91F /* PBXTargetDependency */,
+			);
+			name = LalafoodTests;
+			productName = LalafoodTests;
+			productReference = C1A637302506251F0088B91F /* LalafoodTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1A637122506251A0088B91F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Rainier Rivera";
+				TargetAttributes = {
+					C1A637192506251A0088B91F = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					C1A6372F2506251F0088B91F = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = C1A637192506251A0088B91F;
+					};
+				};
+			};
+			buildConfigurationList = C1A637152506251A0088B91F /* Build configuration list for PBXProject "Lalafood" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1A637112506251A0088B91F;
+			productRefGroup = C1A6371B2506251A0088B91F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1A637192506251A0088B91F /* Lalafood */,
+				C1A6372F2506251F0088B91F /* LalafoodTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1A637182506251A0088B91F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1A6372A2506251E0088B91F /* LaunchScreen.storyboard in Resources */,
+				C1A637272506251E0088B91F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1A6372E2506251F0088B91F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0339DB48FFC12DC1ED76913B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lalafood-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DE33FC3F888D27F3CA7FF7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lalafood/Pods-Lalafood-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lalafood/Pods-Lalafood-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lalafood/Pods-Lalafood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71866F666858900179D9D643 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LalafoodTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1A637162506251A0088B91F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1A637692506F1560088B91F /* DeliveryDetailSectionModel.swift in Sources */,
+				C12837EE25071AD700531E65 /* DeliveryInformationCellViewModel.swift in Sources */,
+				C1A6374E250656300088B91F /* Route.swift in Sources */,
+				C1A63758250690B20088B91F /* DeliveryListViewModel.swift in Sources */,
+				C1A6374625062DF50088B91F /* WebService.swift in Sources */,
+				C1A6374A2506537F0088B91F /* DeliveryAPI.swift in Sources */,
+				C1A637652506F11B0088B91F /* DeliveryImageTableViewCell.swift in Sources */,
+				C1A637632506F0FF0088B91F /* DeliveryInformationTableViewCell.swift in Sources */,
+				C1A6375D2506ED630088B91F /* Double+.swift in Sources */,
+				C1A6374825062E6D0088B91F /* WebServiceError.swift in Sources */,
+				C1A6375525068B920088B91F /* BasicDeliveryTableViewCell.swift in Sources */,
+				C12837F425072D0300531E65 /* RefreshControl+.swift in Sources */,
+				C1A637222506251A0088B91F /* ViewController.swift in Sources */,
+				C1A637672506F1350088B91F /* DeliveryFeeTableViewCell.swift in Sources */,
+				C1A6374325062D960088B91F /* Delivery.swift in Sources */,
+				C1A6376B2506F44C0088B91F /* DeliveryDetailsViewModel.swift in Sources */,
+				C1A6374125062D8C0088B91F /* Sender.swift in Sources */,
+				C12837F225071B4100531E65 /* DeliveryFeeCellViewModel.swift in Sources */,
+				C1A6376D25070C190088B91F /* FavouriteDelivery.swift in Sources */,
+				C1A6375A250690D60088B91F /* DeliverySectionModel.swift in Sources */,
+				C1A6375225066E1B0088B91F /* DeliveryPersistentService.swift in Sources */,
+				C1A6374C250655620088B91F /* DeliveryWebService.swift in Sources */,
+				C12837F025071AF000531E65 /* DeliveryImageCellViewModel.swift in Sources */,
+				C1A6371E2506251A0088B91F /* AppDelegate.swift in Sources */,
+				C1A637502506651C0088B91F /* RealmService.swift in Sources */,
+				C1A637602506EE060088B91F /* DeliveryDetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1A6372C2506251F0088B91F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1A637352506251F0088B91F /* LalafoodTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1A637322506251F0088B91F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1A637192506251A0088B91F /* Lalafood */;
+			targetProxy = C1A637312506251F0088B91F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C1A637282506251E0088B91F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1A637292506251E0088B91F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1A637372506251F0088B91F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C1A637382506251F0088B91F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1A6373A2506251F0088B91F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A53408F3FEDAED17A6728F12 /* Pods-Lalafood.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 626472476S;
+				INFOPLIST_FILE = Lalafood/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rainierrivera.Lalafood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1A6373B2506251F0088B91F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 638A119D09E633BFED7B04F3 /* Pods-Lalafood.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 626472476S;
+				INFOPLIST_FILE = Lalafood/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rainierrivera.Lalafood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C1A6373D2506251F0088B91F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15F9F5BD30D4534B0A3BDBB3 /* Pods-LalafoodTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 626472476S;
+				INFOPLIST_FILE = LalafoodTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rainierrivera.LalafoodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lalafood.app/Lalafood";
+			};
+			name = Debug;
+		};
+		C1A6373E2506251F0088B91F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E87F7B3C9A8E2EE5BC5CFEA5 /* Pods-LalafoodTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 626472476S;
+				INFOPLIST_FILE = LalafoodTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rainierrivera.LalafoodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lalafood.app/Lalafood";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1A637152506251A0088B91F /* Build configuration list for PBXProject "Lalafood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1A637372506251F0088B91F /* Debug */,
+				C1A637382506251F0088B91F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1A637392506251F0088B91F /* Build configuration list for PBXNativeTarget "Lalafood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1A6373A2506251F0088B91F /* Debug */,
+				C1A6373B2506251F0088B91F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1A6373C2506251F0088B91F /* Build configuration list for PBXNativeTarget "LalafoodTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1A6373D2506251F0088B91F /* Debug */,
+				C1A6373E2506251F0088B91F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1A637122506251A0088B91F /* Project object */;
+}
