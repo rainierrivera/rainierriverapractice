@@ -120,7 +120,7 @@ extension ViewController: DeliveryListViewModelDelegate {
   func deliveryListViewModel(_ viewModel: DeliveryListViewModelType, didUpdateItemModel itemModel: [DeliverySectionItemModel]) {
     refreshControl.endRefreshing()
     tableView.contentInset = UIEdgeInsets(top: .zero, left: 0, bottom: 0, right: 0)
-    DispatchQueue.main.async {
+    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
       self.tableView.reloadData()
     }
   }
