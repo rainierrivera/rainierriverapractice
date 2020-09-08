@@ -60,7 +60,9 @@ class DeliveryListViewModel: DeliveryListViewModelType {
   }
   
   func refresh() {
-    updateSectionModel(deliveries)
+    getFavouriteDelivery()
+    getLocalDeliveries()
+    
   }
   
   // for caching

@@ -32,7 +32,11 @@ class DeliveryPersistentService: RealmService, DeliveryPersistentServiceType {
     let favouriteDelivery = FavouriteDelivery()
     favouriteDelivery.deliveryId = delivery.id
     favouriteDelivery.isFavourite = isFavourite
-    try save(object: favouriteDelivery)
+    do {
+      try save(object: favouriteDelivery)
+    } catch {
+      print("unabe to favourite/unfavourite")
+    }
   }
   
   func getFavourites() throws -> [FavouriteDelivery] {
