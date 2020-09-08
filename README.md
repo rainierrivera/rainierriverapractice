@@ -3,3 +3,5 @@
 - open workspace
 - clean and build
 - run the project
+
+John Rainier Rivera - iOS Developer - johnrainier.rivera@gmail.com
